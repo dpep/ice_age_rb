@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift 'lib'
-package_name = 'env_freeze'
+package_name = 'ice_age'
 require "#{package_name}"
 package = IceAge
 
