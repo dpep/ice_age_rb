@@ -1,6 +1,16 @@
+#/usr/bin/env ruby
+
+require 'ice_age'
+
+ENV.clear
+ENV['ICE_AGE_TEST'] = '123'
+IceAge.freeze
+
+
 RSpec.shared_examples 'nothing changed' do
   it { expect(ENV['ICE_AGE_TEST']).to eq '123' }
 end
+
 
 describe IceAge do
   it_behaves_like 'nothing changed'
