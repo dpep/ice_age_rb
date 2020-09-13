@@ -24,7 +24,8 @@ class IceAge
     def endure!
       changes = (Set.new(ENV.to_h) - Set.new(@env)).to_h.keys
       unless changes.empty?
-        raise 'ENV changed after freeze: ' + changes.to_s
+        msg = changes.map {|k| { k => { @env[k] => ENV[k] } }}.to_s
+        raise 'ENV changed after freeze: ' + msg
       end
     end
 
