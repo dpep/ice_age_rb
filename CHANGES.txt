@@ -1,2 +1,6 @@
+v0.0.2, 2020-09-13
+    d37b087 auto freeze during before(:suite)
+    af96c06 improved endure! msg
+    7ebea8b add examples
 v0.0.1, 2020-09-04
 - initial launch
