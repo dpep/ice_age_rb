@@ -1,3 +1,5 @@
+require 'ice_age'
+
 RSpec.shared_examples 'nothing changed' do
   it { expect(ENV['ICE_AGE_TEST']).to be_nil }
 end
