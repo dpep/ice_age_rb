@@ -32,6 +32,7 @@ class IceAge
   end
 end
 
+IceAge.freeze
 
 # load framework plugins
 begin
