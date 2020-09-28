@@ -1,3 +1,5 @@
+v0.1.1, 2020-09-28
+    68a929b delay freeze
 v0.1.0, 2020-09-13
     995aefc freeze immediately
 v0.0.2, 2020-09-13
