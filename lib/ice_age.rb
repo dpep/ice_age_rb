@@ -32,8 +32,6 @@ class IceAge
   end
 end
 
-IceAge.freeze
-
 # load framework plugins
 begin
   require_relative 'ice_age/rspec'
