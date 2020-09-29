@@ -27,5 +27,23 @@ describe 'Feature' do
 end
 ```
 
+
+#### Inglorious Alternatives
+```ruby
+before do	   
+  allow(ENV).to receive(:[]).and_call_original	
+  allow(ENV).to receive(:[]).with('FEATURE_ENABLED').and_return('true')	
+end
+
+
+around do |example|
+  ENV['FEATURE_ENABLED'] = 'true'
+  
+  example.run
+  
+  ENV['FEATURE_ENABLED'] = nil
+end
+```
+
 ----
 ![Gem](https://img.shields.io/gem/dt/ice_age?style=plastic)
