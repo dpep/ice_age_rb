@@ -6,7 +6,7 @@ RSpec.configure do |config|
     IceAge.frozen? ? IceAge.endure! : IceAge.freeze
   end
 
-  config.before do
+  config.after do
     IceAge.restore
   end
 
