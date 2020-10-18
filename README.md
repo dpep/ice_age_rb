@@ -47,4 +47,5 @@ end
 
 ----
 ![Gem](https://img.shields.io/gem/dt/ice_age?style=plastic)
+[![codecov](https://codecov.io/gh/dpep/ice_age_rb/branch/master/graph/badge.svg?token=S5F1PF9066)](https://codecov.io/gh/dpep/ice_age_rb)
 [![codebeat badge](https://codebeat.co/badges/cf6afb0c-a510-4fbe-97d5-17e08826b144)](https://codebeat.co/projects/github-com-dpep-ice_age_rb-master)

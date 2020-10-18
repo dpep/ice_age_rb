@@ -3,4 +3,4 @@ language: ruby
 #   - 2.5.2
 install: bundle install
 script:
-  - bundle exec rspec --format doc
+  - bundle exec rspec
