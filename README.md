@@ -30,20 +30,21 @@ end
 
 #### Inglorious Alternatives
 ```ruby
-before do	   
-  allow(ENV).to receive(:[]).and_call_original	
-  allow(ENV).to receive(:[]).with('FEATURE_ENABLED').and_return('true')	
+before do
+  allow(ENV).to receive(:[]).and_call_original
+  allow(ENV).to receive(:[]).with('FEATURE_ENABLED').and_return('true')
 end
 
 
 around do |example|
   ENV['FEATURE_ENABLED'] = 'true'
-  
+
   example.run
-  
+
   ENV['FEATURE_ENABLED'] = nil
 end
 ```
 
 ----
 ![Gem](https://img.shields.io/gem/dt/ice_age?style=plastic)
+[![codebeat badge](https://codebeat.co/badges/cf6afb0c-a510-4fbe-97d5-17e08826b144)](https://codebeat.co/projects/github-com-dpep-ice_age_rb-master)
