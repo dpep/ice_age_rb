@@ -14,7 +14,9 @@ Gem::Specification.new do |s|
   s.summary     = package.to_s
   s.version     = package.const_get 'VERSION'
 
+  s.add_development_dependency 'codecov'
   s.add_development_dependency 'pry'
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
+  s.add_development_dependency 'simplecov'
 end
