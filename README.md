@@ -56,7 +56,6 @@ around do |example|
     example.run
   end
 end
-  
 ```
 
 ----
