@@ -36,6 +36,11 @@ before do
 end
 
 
+before do
+  stub_const('ENV', ENV.to_hash.merge('FEATURE_ENABLED' => 'true'))
+end
+
+
 around do |example|
   ENV['FEATURE_ENABLED'] = 'true'
 
@@ -43,6 +48,15 @@ around do |example|
 
   ENV['FEATURE_ENABLED'] = nil
 end
+
+
+# https://github.com/thoughtbot/climate_control
+around do |example|
+  ClimateControl.modify FEATURE_ENABLED: 'true' do
+    example.run
+  end
+end
+  
 ```
 
 ----
