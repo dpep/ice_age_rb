@@ -16,12 +16,14 @@ class IceAge
     end
 
     def restore
-      raise "#{self.class.name}.frozen never called!" unless frozen?
+      raise 'not frozen' unless frozen?
 
       ENV.clear.update(@env)
     end
 
     def endure!
+      raise 'not frozen' unless frozen?
+
       changes = (Set.new(ENV.to_h) - Set.new(@env)).to_h.keys
       unless changes.empty?
         msg = changes.map {|k| { k => { @env[k] => ENV[k] } }}.to_s
