@@ -1,8 +1,7 @@
+require 'ice_age/version'
 require 'set'
 
 class IceAge
-  VERSION = '0.1.2'
-
   class << self
 
     def freeze

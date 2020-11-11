@@ -1,6 +1,6 @@
 $LOAD_PATH.unshift 'lib'
 package_name = 'ice_age'
-require "#{package_name}"
+require "#{package_name}/version"
 package = IceAge
 
 
