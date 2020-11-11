@@ -1,0 +1,16 @@
+###  v0.1.2, 2020-09-28
+    - [9f8e6da](commit/9f8e6da) restore after, not before
+
+###  v0.1.1, 2020-09-28
+    - [68a929b](commit/68a929b) delay freeze
+
+###  v0.1.0, 2020-09-13
+    - [995aefc](cmmit/995aefc) freeze immediately
+
+###  v0.0.2, 2020-09-13
+    - [d37b087](commit/d37b087) auto freeze during before(:suite)
+    - [af96c06](commit/af96c06) improved endure! msg
+    - [7ebea8b](commit/7ebea8b) add examples
+
+###  v0.0.1, 2020-09-04
+    - initial launch
