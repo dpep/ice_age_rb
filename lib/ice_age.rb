@@ -17,7 +17,7 @@ class IceAge
     def restore
       raise 'not frozen' unless frozen?
 
-      ENV.clear.update(@env)
+      ENV.replace(@env)
     end
 
     def endure!
