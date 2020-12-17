@@ -1,3 +1,15 @@
+###  v0.1.3  (2020-12-16)
+- code cleaup
+- codecov
+- github-action (#4)
+- improve gemspec
+- upgrade changelog to md format
+- safeguards
+- travis-ci and codecov
+- codebeat
+- move repo: rb_ prefix => _rb suffix
+- put readme usage examle into spec
+
 ###  v0.1.2  (2020-09-28)
 - restore after, not before
 
