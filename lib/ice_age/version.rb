@@ -1,3 +1,3 @@
-class IceAge
+module IceAge
   VERSION = '0.1.3'
 end

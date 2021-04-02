@@ -1,33 +1,32 @@
 require 'ice_age/version'
 require 'set'
 
-class IceAge
-  class << self
+module IceAge
+  extend self
 
-    def freeze
-      raise 'already frozen' if frozen?
+  def freeze
+    raise 'already frozen' if frozen?
 
-      @env = ENV.to_h.freeze
-    end
+    @env = ENV.to_h.freeze
+  end
 
-    def frozen?
-      !!@env
-    end
+  def frozen?
+    !!@env
+  end
 
-    def restore
-      raise 'not frozen' unless frozen?
+  def restore
+    raise 'not frozen' unless frozen?
 
-      ENV.replace(@env)
-    end
+    ENV.replace(@env)
+  end
 
-    def endure!
-      raise 'not frozen' unless frozen?
+  def endure!
+    raise 'not frozen' unless frozen?
 
-      changes = (Set.new(ENV.to_h) - Set.new(@env)).to_h.keys - WHITELIST
-      unless changes.empty?
-        msg = changes.map {|k| { k => { @env[k] => ENV[k] } }}.to_s
-        raise 'ENV changed after freeze: ' + msg
-      end
+    changes = (Set.new(ENV.to_h) - Set.new(@env)).to_h.keys - WHITELIST
+    unless changes.empty?
+      msg = changes.map {|k| { k => { @env[k] => ENV[k] } }}.to_s
+      raise 'ENV changed after freeze: ' + msg
     end
   end
 
