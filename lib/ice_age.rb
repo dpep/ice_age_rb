@@ -23,14 +23,19 @@ class IceAge
     def endure!
       raise 'not frozen' unless frozen?
 
-      changes = (Set.new(ENV.to_h) - Set.new(@env)).to_h.keys
+      changes = (Set.new(ENV.to_h) - Set.new(@env)).to_h.keys - WHITELIST
       unless changes.empty?
         msg = changes.map {|k| { k => { @env[k] => ENV[k] } }}.to_s
         raise 'ENV changed after freeze: ' + msg
       end
     end
-
   end
+
+  WHITELIST = [
+    'LINES',
+    'COLUMNS',
+  ].freeze
+  private_constant :WHITELIST
 end
 
 # load framework plugins
