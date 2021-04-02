@@ -1,3 +1,7 @@
+###  v0.2.0  (2021-04-01)
+- whitelist pry commands
+- module conversion
+
 ###  v0.1.3  (2020-12-16)
 - code cleaup
 - codecov
