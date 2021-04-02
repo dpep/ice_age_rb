@@ -31,8 +31,9 @@ module IceAge
   end
 
   WHITELIST = [
-    'LINES',
     'COLUMNS',
+    'DISABLE_PRY',
+    'LINES',
   ].freeze
   private_constant :WHITELIST
 end
