@@ -1,6 +1,6 @@
 IceAge
 ======
-Freeze your ENVironment during testing. ENV is reset before each test, making it trivial to maintain test isolation while testing your code with different environment variable values.
+Freeze your ENVironment during testing. ENV is reset after each test, making it trivial to maintain test isolation while testing your code with different environment variable values.
 
 
 #### Install
