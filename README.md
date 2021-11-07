@@ -1,7 +1,7 @@
 IceAge
 ======
+Freeze your ENVironment during testing. ENV is reset before each test, making it trivial to maintain test isolation while testing your code with different environment variable values.
 
-Freeze your ENVironment during testing. Just in case you need to change ENV variables during tests, this library ensures that everything is reset before the next test runs.
 
 #### Install
 ```gem install ice_age```
