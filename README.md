@@ -56,6 +56,12 @@ around do |example|
     example.run
   end
 end
+
+
+# https://github.com/ljkbennett/stub_env
+before do
+  stub_env('key', 'value')
+end
 ```
 
 ----
