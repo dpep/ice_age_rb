@@ -1,5 +1,8 @@
 IceAge
 ======
+![Gem](https://img.shields.io/gem/dt/ice_age?style=plastic)
+[![codecov](https://codecov.io/gh/dpep/ice_age_rb/branch/main/graph/badge.svg?token=S5F1PF9066)](https://codecov.io/gh/dpep/ice_age_rb)
+
 Freeze your ENVironment during testing. ENV is reset after each test, making it trivial to maintain test isolation while testing your code with different environment variable values.
 
 
@@ -65,6 +68,3 @@ end
 ```
 
 ----
-![Gem](https://img.shields.io/gem/dt/ice_age?style=plastic)
-[![codecov](https://codecov.io/gh/dpep/ice_age_rb/branch/main/graph/badge.svg?token=S5F1PF9066)](https://codecov.io/gh/dpep/ice_age_rb)
-[![codebeat badge](https://codebeat.co/badges/cf6afb0c-a510-4fbe-97d5-17e08826b144)](https://codebeat.co/projects/github-com-dpep-ice_age_rb-main)
