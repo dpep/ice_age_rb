@@ -1,4 +1,4 @@
-require 'pry'
+require 'byebug'
 
 require 'simplecov'
 SimpleCov.start do
