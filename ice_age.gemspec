@@ -1,5 +1,5 @@
 package_name = File.basename(__FILE__).split('.')[0]
-require File.join(package_name.tr('-', '/'), 'version')
+require 'ice_age/version'
 
 package = IceAge
 
