@@ -1,4 +1,4 @@
-package_name = File.basename(__FILE__).split(".")[0]
+package_name = File.basename(__FILE__).split('.')[0]
 require File.join(package_name.tr('-', '/'), 'version')
 
 package = IceAge
