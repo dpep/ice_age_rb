@@ -2,6 +2,8 @@ package_name = File.basename(__FILE__).split(".")[0]
 
 puts "***************"
 puts Dir.pwd
+puts __FILE__
+puts __dir__
 puts Dir.glob("lib/**/version.rb", base: __dir__)
 Dir.glob("lib/**/version.rb", base: __dir__) { |path| load "#{__dir__}/#{path}"}
 
