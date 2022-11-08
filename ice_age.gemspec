@@ -1,13 +1,5 @@
 package_name = File.basename(__FILE__).split(".")[0]
-
-puts "***************"
-puts Dir.pwd
-puts __FILE__
-puts __dir__
-puts Dir.glob("*")
-puts Dir.glob("lib/**/version.rb")
-puts Dir.glob("lib/**/version.rb", base: __dir__)
-Dir.glob("lib/**/version.rb", base: __dir__) { |path| load "#{__dir__}/#{path}"}
+require File.join(package_name.tr('-', '/'), 'version')
 
 package = IceAge
 
