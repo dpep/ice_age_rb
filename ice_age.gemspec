@@ -1,5 +1,5 @@
 package_name = File.basename(__FILE__).split(".")[0]
-require_relative "lib/ice_age/version"
+require_relative Dir.glob("**/version.rb")[0].delete_suffix(".rb")
 
 package = IceAge
 
