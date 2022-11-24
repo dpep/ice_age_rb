@@ -1,5 +1,5 @@
 package_name = File.basename(__FILE__).split(".")[0]
-require File.expand_path("lib/ice_age/version", __dir__)
+require_relative "ice_age/version"
 
 package = IceAge
 
