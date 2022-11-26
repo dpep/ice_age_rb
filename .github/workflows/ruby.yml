@@ -1,7 +1,11 @@
 # install dependencies and run tests
 # https://github.com/marketplace/actions/setup-ruby-jruby-and-truffleruby
 
-on: [ push, pull_request ]
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    types: [ opened, edited, synchronize ]
 
 jobs:
   test:
