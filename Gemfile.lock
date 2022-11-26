@@ -37,7 +37,7 @@ DEPENDENCIES
   byebug
   codecov
   ice_age!
-  rspec (= 3.0.0)
+  rspec
   simplecov
 
 BUNDLED WITH
