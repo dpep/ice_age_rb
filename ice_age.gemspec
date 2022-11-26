@@ -1,6 +1,5 @@
-$LOAD_PATH.unshift File.expand_path("lib", __dir__)
 package_name = File.basename(__FILE__).split(".")[0]
-require "#{package_name}/version"
+require_relative "lib/#{package_name}/version"
 
 package = IceAge
 
