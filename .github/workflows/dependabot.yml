@@ -1,4 +1,4 @@
-name: Dependabot auto-approve
+name: Dependabot automations
 on: pull_request
 
 jobs:
