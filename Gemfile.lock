@@ -47,7 +47,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.13.0)
     rspec-support (3.13.8)
-    simplecov (1.2.0)
+    simplecov (1.3.2)
     stringio (3.2.0)
     tsort (0.2.0)
 
@@ -59,7 +59,7 @@ DEPENDENCIES
   ice_age!
   rspec (>= 3.10)
   rspec-debugging
-  simplecov (>= 0.22)
+  simplecov (>= 1)
 
 BUNDLED WITH
-   4.0.10
+  4.0.10
