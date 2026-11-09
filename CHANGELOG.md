@@ -1,3 +1,6 @@
+## Unreleased
+- Requires Ruby 3.3 or newer.
+
 ###  v0.2.0  (2021-04-01)
 - whitelist pry commands
 - module conversion
