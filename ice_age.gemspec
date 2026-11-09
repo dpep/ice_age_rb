@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.summary     = 'IceAge'
   s.version     = IceAge::VERSION
 
-  s.required_ruby_version = '>= 3.2'
+  s.required_ruby_version = '>= 3.3'
 
   s.add_development_dependency 'debug', '>= 1'
   s.add_development_dependency 'rspec', '>= 3.10'
